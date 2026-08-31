@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Food Store</title>
+</head>
+<body>
+    <header>
+        <h1>🌭 Food Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mis Pedidos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="admin.html">Panel Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    
+    <aside>
+        <h2>Categorías</h2>
+        <ul id="lista-categorias"></ul>
+    </aside>
+
+    <main>
+        <form>
+            <label for="buscar">Buscar Productos</label>
+            <input id="buscar" type="text" placeholder="Ej: Hamburguesa">
+            <button type="submit">Buscar</button>
+        </form>
+        
+        <section>
+            <h2>Productos Destacados</h2>
+            <section id="contenedor-productos"></section>
+        </section>
+    </main>
+    <hr>
+    
+    <footer>
+        <p>&copy; 2026 Food Store. Derechos reservados.</p>
+        <p>Contacto: <a href="#">informacion@gmail.com</a></p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

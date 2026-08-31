@@ -1,0 +1,212 @@
+:root {
+    --color-primario: #ff6347;
+    --color-fondo: #f0f0f0;
+    --color-texto: #333;
+    --color-blanco: #fff;
+    --color-borde: #ddd;
+    --color-focus: #ff4500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    display: none; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 20px; 
+    
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+header {
+    grid-area: header;
+    background-color: var(--color-blanco);
+    padding: 20px 40px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: var(--color-primario);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bold;
+    padding: 10px; 
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-primario);
+}
+
+aside {
+    grid-area: aside;
+    background-color: var(--color-blanco);
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    align-self: start; 
+}
+
+aside h2 {
+    margin-bottom: 15px; 
+    color: var(--color-primario);
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 10px; 
+}
+
+aside a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+aside a:hover {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+}
+
+main form {
+    background-color: var(--color-blanco);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 6. MAIN Y PRODUCTOS (Versión con alineación perfecta) */
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+article {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    /* Flexbox vertical para controlar el orden */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Hace que todas las tarjetas de la misma fila tengan la misma altura */
+}
+
+article img {
+    width: 100%;
+    height: 180px;        /* 1. Forzamos una altura fija igual para todas */
+    object-fit: cover;   /* 2. Recorta la imagen prolijamente sin deformarla */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+article h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+article p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* Empuja los botones siempre al fondo de la tarjeta, sin importar el largo del texto */
+article button:first-of-type {
+    margin-top: auto; 
+}
+
+button {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-focus);
+}
+
+input, select, textarea {
+    padding: 10px; 
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-blanco);
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px; 
+    text-align: left;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+}
