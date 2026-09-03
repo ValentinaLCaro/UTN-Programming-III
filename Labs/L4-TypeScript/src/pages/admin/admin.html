@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Food Store</title>
+</head>
+<body>
+    <header>
+        <h1>🔩 Panel de Administración</h1>
+        <nav>
+            <ul>
+                <li> <a href="../client/index.html">Volver a la Tienda</a></li>
+                <li><a href="#" id="btn-logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Gestión de Productos</h2>
+        <button><a href="#seccion1" style="color: white; text-decoration: none;">+ Nuevo Producto</a></button><br>
+        <br><table border="1">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08WHJvZuEkMrTmEDZ61xAIF4q5MVdkiWaop8wPGRRIg&s=10" width="50px" alt="Hamburguesa"></td>
+                    <td>Hamburguesa</td>
+                    <td>Hamburguesas</td>
+                    <td>$2500.00</td>
+                    <td>12</td>
+                    <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                </tr>
+            </tbody>
+        </table><br>
+    </main>
+    <script type="module" src="../../main.ts"></script>
+</body>
+</html>
