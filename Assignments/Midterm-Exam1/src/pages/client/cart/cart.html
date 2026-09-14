@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Carrito</title>
+</head>
+<body>
+    <div class="layout-grid">
+        <header>
+            <h1>🌭 Food Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="../home/home.html">Inicio</a></li>
+                    <li><a href="#">🛒 Carrito</a></li>
+                    <li><a href="../../admin/admin.html">Panel Admin</a></li>
+                    <li><a href="#" id="btn-logout">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main style="grid-column: 1 / -1;">
+            <h2>Mi Carrito</h2>
+            <div id="contenedor-carrito"></div>
+            <h3 id="total-carrito"></h3>
+        </main>
+    </div>
+    <script type="module" src="./cart.ts"></script>
+</body>
+</html>
