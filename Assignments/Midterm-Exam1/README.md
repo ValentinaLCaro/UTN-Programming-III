@@ -4,7 +4,7 @@ Proyecto **Food Store**, Evaluación 1 de Programación III
 
 ## Enlace al video explicativo:
 
-[link]
+[\[Programación III Parcial N°1 | UTN TUPAD\]](https://youtu.be/XtX5XJ5-ZkE)
 
 ## Descripción
 
