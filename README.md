@@ -7,7 +7,7 @@ This repository contains academic labs and projects focused on **Full Stack Web 
 
 ## ✨ Student  
 - **Name:** Valentina Caro  
-- **Stack:** HTML5, CSS, JavaScript & TypeScript. Visual Studio Code / Intellij IDEA.
+- **Stack:** HTML5, CSS, Java, JavaScript & TypeScript. Visual Studio Code / Intellij IDEA.
 
 ## 🚀 Key Learning Outcomes
 *   **Full-Stack Integration:** Seamless connection of frontend and backend technologies to build end-to-end web applications
